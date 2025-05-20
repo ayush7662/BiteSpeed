@@ -7,7 +7,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.json()); // Required for parsing JSON bodies and handle error
+app.use(express.json()); // Required for parsing JSON bodies.
 app.use('/', identifyRouter);
 
 app.listen(PORT, () => {
